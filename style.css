@@ -1,0 +1,22 @@
+/* карточки с видео*/
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card{
+    display: inline-block;
+    margin: 12px;
+    
+} /*todo cтили для карточек*/
+
+.card > img{
+    width: 100%;
+    height: 250px;
+}
+.card > .name{
+    /* todo косметику для названия*/
+}
+.card > .duration {
+    /*косметика для просмотров*/
+}
+/*диалоговое окно*/
