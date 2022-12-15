@@ -20,7 +20,11 @@ function showVideos (videos){
     console.log(videos);
     videos.forEach((v) => {
         const card=document.createElement('div');
+        card.addEventListener('click',()=>{
+            openPlayer(v.id,v.name);
+        })
         card.classList.add('card');
+
         const img=document.createElement('img');
         img.src=v.preview;
         const name=document.createElement('div');
@@ -44,7 +48,7 @@ overlay.classList.add('overlay');
 const dialog=document.createElement('div');
 dialog.classList.add('dialog');
 const video=document.createElement('video');
-vedeo.src=info.url;
+video.src=info.url;
 video.controls=true;
 
 const closeBtn=document.createElement('button');
