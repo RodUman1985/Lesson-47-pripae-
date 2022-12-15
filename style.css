@@ -20,3 +20,26 @@ body{
     /*косметика для просмотров*/
 }
 /*диалоговое окно*/
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(55, 0, 255, 0.185);
+}
+.dialog{
+    position: fixed;
+    z-index: 99;
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    background: white;
+}
+.dialog > video{
+    height: 90%;
+    margin: 0 auto;
+    display:block;
+}
+/*todo косметика для диалогового окна*/

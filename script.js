@@ -7,7 +7,15 @@ async function loadVideos() {
     showVideos (videos);
 
 }
-
+/*<div class="overlay">
+        <div class="dialog">
+            <video controls src="http://127.0.0.1:8080/stream/1.mp4"></video>
+            <div>Video</div>
+            <div>55555</div>
+            <button>Закрыть</button>
+        </div>
+        
+    </div>*/ 
 function showVideos (videos){
     console.log(videos);
     videos.forEach((v) => {
@@ -27,3 +35,6 @@ function showVideos (videos){
     });
 }
 loadVideos();
+async function openPlayer(id,name){
+const rec= await fetch(`${baseURL}/video/${id}`)
+}
