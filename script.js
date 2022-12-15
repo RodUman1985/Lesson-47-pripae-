@@ -36,5 +36,24 @@ function showVideos (videos){
 }
 loadVideos();
 async function openPlayer(id,name){
-const rec= await fetch(`${baseURL}/video/${id}`)
+const resp= await fetch(`${baseURL}/video/${id}`);
+const info= await resp.json();
+const overlay=document.createElement('div');
+overlay.classList.add('overlay');
+
+const dialog=document.createElement('div');
+dialog.classList.add('dialog');
+const video=document.createElement('video');
+vedeo.src=info.url;
+video.controls=true;
+
+const closeBtn=document.createElement('button');
+closeBtn.innerText='close';
+closeBtn.addEventListener('click',()=>{
+    overlay.remove();
+});
+// todo добавить теги для названия и количества просмотров 
+dialog.append(video,closeBtn);
+overlay.append(dialog);
+document.body.append(overlay);
 }
