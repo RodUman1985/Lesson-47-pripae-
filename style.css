@@ -2,10 +2,12 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1612726649_92-p-krasivie-golubie-foni-neba-114.jpg);
 }
 .card{
     display: inline-block;
     margin: 12px;
+   
     
 } /*todo cтили для карточек*/
 
@@ -15,9 +17,29 @@ body{
 }
 .card > .name{
     /* todo косметику для названия*/
+    color: rgb(1, 14, 7);
+  text-shadow:
+      0 0 7px rgb(19, 103, 36),
+      0 0 10px rgb(10, 118, 37),
+      0 0 21px rgb(11, 123, 50),
+      0 0 42px rgb(14, 119, 29),
+      0 0 82px rgb(127, 149, 18),
+      0 0 92px rgb(126, 136, 17),
+      0 0 102px rgb(119, 139, 8),
+      0 0 151px rgb(146, 217, 24);
 }
 .card > .duration {
     /*косметика для просмотров*/
+    color: rgb(103, 18, 163);
+  text-shadow:
+    0 0 7px rgb(179, 19, 19),
+    0 0 10px rgb(122, 9, 9),
+    0 0 21px rgb(187, 14, 14),
+    0 0 42px rgb(24, 72, 231),
+    0 0 82px rgb(25, 71, 220),
+    0 0 92px rgb(22, 51, 213),
+    0 0 102px rgb(25, 32, 218),
+    0 0 151px rgb(37, 24, 217);
 }
 /*диалоговое окно*/
 .overlay{
@@ -38,8 +60,41 @@ body{
     background: white;
 }
 .dialog > video{
-    height: 90%;
+    height: 83%;
+    width: 100%;
     margin: 0 auto;
     display:block;
+}
+.dop{
+    font-weight:bold;
+    text-transform:uppercase; 
+    color: green; 
+    font-style: italic; 
+}
+.dialog > button{
+  font-weight:bold;
+  letter-spacing: 10px;
+  font-size: 110%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform:uppercase;  
+  color: rgb(199, 210, 221);  
+  width: 140px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background: rgb(35, 12, 189);
+  border-radius: 15px;
+  outline: none;
+}
+.dialog > .viewCount{
+    color: rgb(98, 11, 11);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 140%;
+}
+.dialog > .name1{
+    color: rgb(23, 16, 120);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+
 }
 /*todo косметика для диалогового окна*/
